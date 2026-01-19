@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
 
         UserEntity storedUserEntity = userRepository.save(userEntity);
 
-        return mapToDto(storedUserEntity); // 3. Usando método auxiliar
+        return mapToDto(storedUserEntity); 
     }
 
     @Override

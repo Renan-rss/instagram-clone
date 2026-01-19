@@ -26,9 +26,9 @@ class JwtUtilsTest {
         jwtUtils = new JwtUtils();
     }
 
-    // =========================================
-    // Testes do método generateToken
-    // =========================================
+    
+    // -------Testes do método generateToken-------
+    
 
     @Test
     void deveGerarTokenQuandoAuthenticationForValido() {
@@ -40,9 +40,9 @@ class JwtUtilsTest {
         assertFalse(token.isBlank());
     }
 
-    // =========================================
-    // Testes do método validateToken
-    // =========================================
+    
+    // -------Testes do método validateToken-------
+    
 
     @Test
     void deveRetornarTrueQuandoTokenForValido() {
@@ -64,9 +64,9 @@ class JwtUtilsTest {
         assertFalse(valido);
     }
 
-    // =========================================
-    // Testes do método getUsernameFromToken
-    // =========================================
+   
+    // -------Testes do método getUsernameFromToken-------
+    
 
     @Test
     void deveExtrairUsernameCorretamenteDoToken() {
